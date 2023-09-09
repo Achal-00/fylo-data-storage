@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .slider {
+    background: linear-gradient(
+      to right,
+      hsl(6, 100%, 80%) 20%,
+      hsl(335, 100%, 65%) 79%,
+      hsl(229, 57%, 11%) 0%
+    );
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1em;
+    width: 1em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+  }
+
+  .slider::-moz-range-thumb {
+    height: 1.3em;
+    width: 1.3em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+    border: none;
+  }
+}
